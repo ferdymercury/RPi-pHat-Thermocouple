@@ -1,8 +1,10 @@
 *.numbers
 *.bak
 *.kicad_pcb-bak
+*.sch-bak
 *.save*
 *.net
+*.dsn
 *.csv
 *.xml
 .idea
