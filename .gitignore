@@ -9,5 +9,7 @@
 *.xml
 .idea
 __pycache__\
-
+Version-*/
 fp-info-cache
+_autosave*
+gerbers-*.zip
