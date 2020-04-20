@@ -1,9 +1,11 @@
 # Raspberry Pi Thermocouple pHat for genmon
 
+## Thanks!
 First and foremost, this work is a derivation of the fine work done by
-Mike Lawrence with this [RPi-pHat-Thermocouple](https://github.com/mikelawrence/RPi-pHat-Thermocouple)
+[Mike Lawrence](https://github.com/mikelawrence) with his
+[RPi-pHat-Thermocouple](https://github.com/mikelawrence/RPi-pHat-Thermocouple)
 project.  That implementation had a different use-case, and I adapted his
-fine design for my own purposes.
+great design for my own purposes.
 
 The major changes to his design to this one are:
 
@@ -17,7 +19,7 @@ The major changes to his design to this one are:
 * Add pin headers (with optional pull-ups) for I2C peripherals.
 * Add fuse to protect connections to off-board peripherals.
 
-I'd like to extend my thanks for Mike for sharing his work with the community under an MIT license.  This work is likewise available under the same license.
+I'd like to extend my thanks to [Mike](https://github.com/mikelawrence) for sharing his work with the community under an MIT license.  This derivitive work is likewise available under the same license.
 
 # What it is
 
@@ -25,8 +27,7 @@ This is a Raspberry Pi PCB that supports:
 
 * Three MAX31850 1-Wire Thermocouple Converters for remote temperature sensing
 * DS18S20 1-Wire Thermometer for local Hat temperature
-* Electrically isolated RS-232 interface to the Raspberry 
-Pi UART serial port.
+* Electrically isolated RS-232 interface to the Raspberry Pi's serial port UART.
 
 The goal of this board is to piggyback on a Raspberry Pi running the [genmon](https://github.com/jgyates/genmon)
 package.  That software expects to communicate with the 9600 bps serial MODBUS connection on a Generac generator
@@ -72,15 +73,15 @@ accessory connector.  There is an high-speed isolation device (apparently transf
 approximately 20MBit/s, substantially higher bandwidth than most common optoisolators.  This isolation
 device has separate power/ground connections for each side, and in excess of 1kV of isolation.
 
-## Status
+# Status
 
-### Genmon variation
+## Genmon variation
 
 * Rev 3.1 of the PCB fixes pin assignment problems on the Maxim MAX3221 RS-232/TTL level converter device.
   * You can order parts from Mouser using this [shared BOM](xxx) link. 
 * Rev 3.0 PCB was the first version of the whole redesign, manufactured by JCLPCB.
 
-### Original version
+## Original version
 Older versions described below are Mike Lawrence's original design in the smaller Raspberry Pi Zero sized
 form factor.
 
@@ -106,26 +107,28 @@ form factor.
 
 <img src="meta/RPi-pHat-Thermocouple.png" style="width:100%">
 
-## Kicad Notes
+# Kicad Notes
 
 * This PCB design uses some libraries available here [Mike's KiCad Libraries](https://github.com/mikelawrence/KiCad-Libraries).
 * This PCB was designed with [KiCad 5.1.5](http://kicad-pcb.org).
 * The MAX31850K parts have an exposed pad on the bottom which requires either a reflow oven or hot air to solder properly.
 
-## Design
+# Design
 
-### Input Power
+## Input Power
 
 This board has screw terminals to which you can connect a **regulated 5VDC** power supply.  This is is connected **directlly** to the +5V power pins on the Raspberry Pi GPIO connector.
 
-**You should only connect +5V DC power to the screw terminals when you are not powering the Raspberry Pi via its USB connector.**
+**You should _never_ connect 5V DC power to the screw terminals if the Raspberry Pi is being powered via it's USB connector!**
 
-If the Raspberry Pi is power in the usual way via its micro USB connector, then the Raspberry Pi will supply power
+If the Raspberry Pi is powered in the usual way via its micro USB connector, then the Raspberry Pi will supply power
 to this PCB and power the components on the board.  Alternatively, if it is more convienient to provide regulated
 +5V DC power from another source, then the screw terminals are available for that purpose.
 
 The components on the board draw well under 100mA of power at 5V, so there ought to be no concern when
 powering from the Raspberry Pi that the PCB is plugged into.
+
+## Isolated RS-232 interface
 
 Separately, there is a 4 pin screw terminal connection for RS-232 transmit and receive as well as generator 
 controller ground and generator controller 5VDC.  The ground and power on this 4 position screw terminal is
@@ -133,11 +136,11 @@ isolated and distinct from the Raspberry Pi power and the rest of the PCB.  You 
 the RS-232 screw termainal block to any other ground connection on the genmon PCB.
 
 
-### MAX31850K Thermocouple-to-Digital Converter
+## MAX31850K Thermocouple-to-Digital Converter
 
 Although the MAX38150K datasheet typical application circuit doesn't show the use of ferrite beads many designs seems to include them. That in combination with the larger than normal capacitor across the input will hopefully improve sampling errors even further.
 
-## Raspberry Pi Setup
+# Raspberry Pi Setup
 
 This setup makes several assumptions. First you are using Raspbian Buster. This software and instructions most likely work on other versions of Raspbian but they have not been tested. Second Python3 is the target programming environment. It is also assumed that you are using the standard `pi` user. Otherwise you will have to edit the commands by replacing `/home/pi` with your user's home directory. Install everything needed by executing the following commands.
 
