@@ -1,16 +1,88 @@
-# Raspberry Pi Thermocouple pHat
+# Raspberry Pi Thermocouple pHat for genmon
 
-The Raspberry Pi Zero sized Hats are now officially called **Micro-Hats** or **uHats** but for consistency sake, this board's name will remain Raspberry Pi Thermocouple **pHat**.
+First and foremost, this work is a derivation of the fine work done by
+Mike Lawrence with this [RPi-pHat-Thermocouple](https://github.com/mikelawrence/RPi-pHat-Thermocouple)
+project.  That implementation had a different use-case, and I adapted his
+fine design for my own purposes.
 
-This is a Raspberry Pi Micro-Hat PCB that supports:
+The major changes to his design to this one are:
+
+* Change the form-factor from a Raspberry-Pi Zero sized board to a "full size" version intended for a Raspberry-Pi 2 or 3.
+* Add an isolated RS-232 to TTL interface.
+* Drop the on-board regulator.
+* Drop the SPI EEPROM for automated "Hat" configuration.
+* Drop the buzzer.
+* Add screw terminal connections for power, thermocouple and RS-232 connections.
+* Add pin headers for driving LED annunciators.
+* Add pin headers (with optional pull-ups) for I2C peripherals.
+* Add fuse to protect connections to off-board peripherals.
+
+I'd like to extend my thanks for Mike for sharing his work with the community under an MIT license.  This work is likewise available under the same license.
+
+# What it is
+
+This is a Raspberry Pi PCB that supports:
 
 * Three MAX31850 1-Wire Thermocouple Converters for remote temperature sensing
 * DS18S20 1-Wire Thermometer for local Hat temperature
-* Magnetic Buzzer/Alert
+* Electrically isolated RS-232 interface to the Raspberry 
+Pi UART serial port.
 
-I keep an upright freezer in my garage and on two occasions I have had the freezer die without getting noticed for several days. This project is an attempt to solve my lack of constant oversight. MQTT is used to communicate with Home Assistant home automation software. The MQTT client/server model is very effective in this situation. Home Assistant will monitor the temperature and provide me with alerts so I can do something about the problem before all the food spoils.
+The goal of this board is to piggyback on a Raspberry Pi running the [genmon](https://github.com/jgyates/genmon)
+package.  That software expects to communicate with the 9600 bps serial MODBUS connection on a Generac generator
+controller.
+
+Additionally, there are 3 type K thermocouple interfaces which can be used to monitor critical temperatures
+in the generator, such as the oil cooler temperature, exhaust air temperature, body temperatore of the
+generator, etc.
+
+# Why it is
+
+I have a 22kW generator manufactured by Generac, propane fueled.  The addition of the wonderful 
+[genmon](https://github.com/jgyates/genmon) has really added significant value, and allowed me to
+integrate the generator with my [Home Assistant](https://home-assistant.io) home automation platform.
+
+On one occasion, I was experiencing an extended power outage, and of course, the generator automatically
+started and switch the home loads to it.  About 6 hours into this power outage, I was wondering how it
+was working.  The [genmon](https://github.com/jgyates/genmon) software provides a bunch of data on
+the current operation, indicating no alarms or faults.  However, after an extended run time, I was
+wondering if the generator was overheating or otherwise being stressed?
+
+Measuring some of the relevant components had to be done with, *e.g.,* thermocouples since the usual
+Dallas Semiconductor/Maxim 1-wire bus temperature sensors wouldn't work in a high temperature environment.
+It was at that time that I stumbled upon Mike Lawarence's work and decided to adapt it.
+
+The first thing that caused me to want to layout a new board was that my use case was different.  I had no
+need for a buzzer since my Raspberry Pi was buried inside the generator enclosure and wouldn't ever be
+heard.  Further, I *really* wanted to have screw terminals for the thermocouple wires since the
+metal alloys used in the thermocouple wires don't take solder easily.  Due to the vibration inherit
+to the environment, I wanted to have a really robust mechanical solution for those connections.
+
+Finally, The Raspberry Pi running [genmon](https://github.com/jgyates/genmon) requires a conneciton to
+the RS-232 signals on the generator controller's MODBUS interface.  At present, I was using an external
+TTL/RS-232 level convertor for this purpose.  However in connecting this up, I create a ground loop -- 
+there's a ground path from the generator controller through the RS-232 level converter, though the Raspberry Pi,
+through the 12V to 5V USB power support, to the negative battery terminal, and finally through the cable 
+from the battery to the generator starter and control electronics.  I shudder to think how this all 
+behaves when the starter kicks in during a generator start-up sequence.
+
+So this led to an isolated RS-232 to TTL level converter.  There is a separate power support for this 
+part of the circuit, intended to be supplied by power available on the generator controller's MODBUS
+accessory connector.  There is an high-speed isolation device (apparently transformer coupled?) rated at
+approximately 20MBit/s, substantially higher bandwidth than most common optoisolators.  This isolation
+device has separate power/ground connections for each side, and in excess of 1kV of isolation.
 
 ## Status
+
+### Genmon variation
+
+* Rev 3.1 of the PCB fixes pin assignment problems on the Maxim MAX3221 RS-232/TTL level converter device.
+  * You can order parts from Mouser using this [shared BOM](xxx) link. 
+* Rev 3.0 PCB was the first version of the whole redesign, manufactured by JCLPCB.
+
+### Original version
+Older versions described below are Mike Lawrence's original design in the smaller Raspberry Pi Zero sized
+form factor.
 
 * Rev 2.0 PCB has been ordered from OSH Park and has been fully tested.
   * Removed one of the four MAX31850K's.
@@ -32,21 +104,34 @@ I keep an upright freezer in my garage and on two occasions I have had the freez
 
 ## Board Preview
 
-<img src="meta/RPi-pHat-Thermocouple-3D.png" style="width:100%">
+<img src="meta/RPi-pHat-Thermocouple.png" style="width:100%">
 
 ## Kicad Notes
 
-* This PCB design uses my custom libraries available here [Mike's KiCad Libraries](https://github.com/mikelawrence/KiCad-Libraries).
-* This PCB design is based on [RPi_Zero_pHat_Template](https://github.com/mikelawrence/RPi_Zero_pHat_Template).
-* This PCB was designed with [KiCad 5.1.2](http://kicad-pcb.org).
-* For Bill of Materials generation I use my version of [KiBoM](https://github.com/mikelawrence/KiBoM) forked from [SchrodingersGat](https://github.com/SchrodingersGat/KiBoM).
-* The LMZ21700 Simple Switcher, AT24CS32, and MAX31850K parts have an exposed pad on the bottom which requires either a reflow oven or hot air to solder properly.
+* This PCB design uses some libraries available here [Mike's KiCad Libraries](https://github.com/mikelawrence/KiCad-Libraries).
+* This PCB was designed with [KiCad 5.1.5](http://kicad-pcb.org).
+* The MAX31850K parts have an exposed pad on the bottom which requires either a reflow oven or hot air to solder properly.
 
 ## Design
 
 ### Input Power
 
-This Hat will safely power the Raspberry Pi and this board up to 650mA. Keep in mind that 650mA is not enough for the minimum specified backpower of 1.3A. It is however enough to power (with room to spare) a Raspberry Pi Zero W with nothing else connected. The Barrel Jack will accept 6-11VAC or 6-17VDC. This input voltage is rectified and filtered and applied to a 5VDC Simpler Switcher module from Texas Instruments (LMZ21700). The output of this switcher is applied to the Raspberry Pi 5V through an ideal diode circuit which will prevent any problems when both the Hat and Raspberry Pi are powered simultaneously.
+This board has screw terminals to which you can connect a **regulated 5VDC** power supply.  This is is connected **directlly** to the +5V power pins on the Raspberry Pi GPIO connector.
+
+**You should only connect +5V DC power to the screw terminals when you are not powering the Raspberry Pi via its USB connector.**
+
+If the Raspberry Pi is power in the usual way via its micro USB connector, then the Raspberry Pi will supply power
+to this PCB and power the components on the board.  Alternatively, if it is more convienient to provide regulated
++5V DC power from another source, then the screw terminals are available for that purpose.
+
+The components on the board draw well under 100mA of power at 5V, so there ought to be no concern when
+powering from the Raspberry Pi that the PCB is plugged into.
+
+Separately, there is a 4 pin screw terminal connection for RS-232 transmit and receive as well as generator 
+controller ground and generator controller 5VDC.  The ground and power on this 4 position screw terminal is
+isolated and distinct from the Raspberry Pi power and the rest of the PCB.  You should not tie the ground on
+the RS-232 screw termainal block to any other ground connection on the genmon PCB.
+
 
 ### MAX31850K Thermocouple-to-Digital Converter
 
@@ -69,52 +154,6 @@ Clone this repository from Github with the following commands.
 cd /home/pi
 git clone https://github.com/mikelawrence/RPi-pHat-Thermocouple
 ```
-
-### Configure ID EEPROM
-
-Raspberry Pi Hats require an ID EEPROM with data that uniquely identifies every hat ever made. Build the EEPROM tools, and make the `eeprom_settings.eep` file.
-
-```text
-cd /home/pi/RPi-pHat-Thermocouple/eeprom/
-make all
-./eepmake eeprom_settings.txt eeprom_settings.eep
-```
-
-The next command writes the freshly generated and unique `eeprom_settings.eep` file to the EEPROM but you must push and hold the write switch on the hat before executing this command. By default the EEPROM on the hat is write protected. Pushing the write switch allows writes to occur while the switch is pushed.
-
-```text
-chmod 755 eepflash.sh
-sudo ./eepflash.sh -w -f=eeprom_settings.eep -t=24c32
-```
-
-You will see the following if writing to the EEPROM was successful.
-
-```text
-This will attempt to talk to an EEPROM at i2c address 0x50. Make sure there is an EEPROM at this address.
-This script comes with ABSOLUTELY no warranty. Continue only if you know what you are doing.
-Do you wish to continue? (yes/no): yes
-Writing...
-0+1 records in
-0+1 records out
-117 bytes (117 B) copied, 2.31931 s, 0.1 kB/s
-Done.
-```
-
-This is what you will see if there is a problem communicating with the EEPROM.
-
-```text
-This will attempt to talk to an EEPROM at i2c address 0x50. Make sure there is an EEPROM at this address.
-This script comes with ABSOLUTELY no warranty. Continue only if you know what you are doing.
-Do you wish to continue? (yes/no): yes
-Writing...
-dd: error writing ‘/sys/class/i2c-adapter/i2c-3/3-0050/eeprom’: Connection timed out
-0+1 records in
-0+0 records out
-0 bytes (0 B) copied, 0.0539977 s, 0.0 kB/s
-Error doing I/O operation.
-```
-
-If you successfully wrote the EEPROM there is nothing else left to do here.
 
 ### Setup Interfaces
 
