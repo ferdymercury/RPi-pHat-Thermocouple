@@ -9,14 +9,14 @@ great design for my own purposes.
 
 The major changes to his design to this one are:
 
-* Change the form-factor from a Raspberry-Pi Zero sized board to a "full size" version intended for a Raspberry-Pi 2 or 3.
+* Change the form-factor from a Raspberry-Pi Zero sized board to a "full size" version intended for a Raspberry-Pi 2 or -3.
 * Add an isolated RS-232 to TTL interface.
-* Drop the on-board regulator.
+* Drop the on-board regulator to 5V, and associated bridge rectifier and "ideal diode".
 * Drop the SPI EEPROM for automated "Hat" configuration.
-* Drop the buzzer.
+* Drop the alarm buzzer.
 * Add screw terminal connections for power, thermocouple and RS-232 connections.
 * Add pin headers for driving LED annunciators.
-* Add pin headers (with optional pull-ups) for I2C peripherals.
+* Add pin headers (with configurable pull-ups) for I2C peripherals.
 * Add fuse to protect connections to off-board peripherals.
 
 I'd like to extend my thanks to [Mike](https://github.com/mikelawrence) for sharing his work with the community under an MIT license.  This derivitive work is likewise available under the same license.
@@ -78,7 +78,8 @@ device has separate power/ground connections for each side, and in excess of 1kV
 ## Genmon variation
 
 * Rev 3.1 of the PCB fixes pin assignment problems on the Maxim MAX3221 RS-232/TTL level converter device.
-  * You can order parts from Mouser using this [shared BOM](xxx) link. 
+  * You can order parts from Mouser using this 
+[shared BOM](https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=b36514df12) link. 
 * Rev 3.0 PCB was the first version of the whole redesign, manufactured by JCLPCB.
 
 ## Original version
