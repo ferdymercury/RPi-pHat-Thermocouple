@@ -1321,11 +1321,10 @@ F 0 "F1" V 8275 5800 50  0000 C CNN
 F 1 "Polyfuse 1206L010/60WR 0.1A" V 8366 5800 50  0000 C CNN
 F 2 "Fuse:Fuse_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 8550 5600 50  0001 L CNN
 F 3 "https://www.mouser.com/datasheet/2/240/Littelfuse_PTC_1206L_Datasheet.pdf-477012.pdf" H 8500 5800 50  0001 C CNN
-F 4 "576-1206L010/60WR" V 8500 5800 50  0001 C CNN "Mouser"
-F 5 " 1206L010/60WR " H 8500 5800 50  0001 C CNN "Part Number"
-F 6 "576-1206L010/60WR" H 8500 5800 50  0001 C CNN "Vendor Part Number"
-F 7 "FUSE, 1206,  100mA" H 8500 5800 50  0001 C CNN "Description"
-F 8 "Mouser" H 8500 5800 50  0001 C CNN "Vendor"
+F 4 " 1206L010/60WR " H 8500 5800 50  0001 C CNN "Part Number"
+F 5 "576-1206L010/60WR" H 8500 5800 50  0001 C CNN "Vendor Part Number"
+F 6 "FUSE, 1206,  100mA" H 8500 5800 50  0001 C CNN "Description"
+F 7 "Mouser" H 8500 5800 50  0001 C CNN "Vendor"
 	1    8500 5800
 	0    1    1    0   
 $EndComp
@@ -1457,12 +1456,11 @@ F 0 "U7" H 4550 7117 50  0000 C CNN
 F 1 "ADuM1201AR" H 4550 7026 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4550 6250 50  0001 C CIN
 F 3 "https://www.mouser.com/datasheet/2/609/ADuM1200_1201-279454.pdf" H 4550 6550 50  0001 C CNN
-F 4 "https://www.mouser.com/ProductDetail/Analog-Devices/ADUM1201ARZ-RL7?qs=sGAEpiMZZMssyD0wnx%2FymCCDPdsQyP%2F22F9j%252BvOP7eI%3D" H 4550 6650 50  0001 C CNN "mouser"
-F 5 "IC, Digital Isolators DUAL-CHANNEL DIGITAL ISOLATORS " H 4550 6650 50  0001 C CNN "Description"
-F 6 "Analog Device" H 4550 6650 50  0001 C CNN "Manufacturer"
-F 7 "ADUM1201AR" H 4550 6650 50  0001 C CNN "Part Number"
-F 8 "Mouser" H 4550 6650 50  0001 C CNN "Vendor"
-F 9 "584-ADUM1201AR" H 4550 6650 50  0001 C CNN "Vendor Part Number"
+F 4 "IC, Digital Isolators DUAL-CHANNEL DIGITAL ISOLATORS " H 4550 6650 50  0001 C CNN "Description"
+F 5 "Analog Device" H 4550 6650 50  0001 C CNN "Manufacturer"
+F 6 "ADUM1201AR" H 4550 6650 50  0001 C CNN "Part Number"
+F 7 "Mouser" H 4550 6650 50  0001 C CNN "Vendor"
+F 8 "584-ADUM1201AR" H 4550 6650 50  0001 C CNN "Vendor Part Number"
 	1    4550 6650
 	1    0    0    -1  
 $EndComp
