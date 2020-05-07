@@ -127,10 +127,6 @@ form factor.
 * Rev 1.0 PCB has been ordered from OSH Park and tested.
   * Discovered the linux kernel doesn't seem to support MAX31850K devices without a DS18S20 present. The kernel detects the MAX31850K devices but does not create a w1_slave file to read the temperature. This is most likely a bug in the Linux W1 driver.
 
-## Board Preview
-
-<img src="meta/RPi-pHat-Thermocouple.png" style="width:100%">
-
 # Kicad Notes
 
 * This PCB design uses some libraries available here [Mike's KiCad Libraries](https://github.com/mikelawrence/KiCad-Libraries).
@@ -322,6 +318,14 @@ supply connected to the Micro USB connector on the Raspberry Pi.
 If used, you must supply regulated +5V DC power to the connector.  Note ***there
 is no reverse polarity protection*** for power fed on these screw terminals.
 
+Power for the board can also be supplied via the Raspberry Pi's expansion connector
+via the +5V DC signal on pin 2 when the Raspberry Pi is powered via it's Micro USB 
+connector.
+
+When the the PCB is powered, the green `PWR` LED D5 should be illuminated.  This
+LED is conneted to the locally regulated 3.3V DC power supply for the devices on
+the board (excluding the RS-232 interface; see below.)
+
 ### J3, J4, J5 - Thermocouple connections
 
 These screw terminals are labeled **TC1**, **TC2** and **TC3**, and are
@@ -333,7 +337,7 @@ the positive and negative termainals.  Connecting the thermocouple with reverse
 polarity will not damage the board or thermocouple, but will yield incorrect
 measurements.
 
-### J7 - Geneator Controller Serial Connection
+### J7 - Generator Controller Serial Connection
 
 Signals from the Generac generator's controller are connected to J7.  This includes the RS-232 data connections and power-supply for the isolated RS-232 interface.
 
@@ -349,8 +353,15 @@ power and ground connections of the Raspberry Pi and rest of the circuit.
 * **RX out** this terminal is the *output* data transmitted *to* the generator from genmon.  This should be connected to pin 7 of the controller's molex connector.
 
 * The **Ground** terminal should be connected to pin 2 of the controller's molex connector.
-* The **5V** terminal should be connected to pin 1 of the controller's molex connector, which is a power source intended to power accessories.  This circuit
-requires approximately 50mA (or less) from the power input.  While a nominal +5V DC source is expected, there is an internal low-dropout (LDO) regulator on the board that should function with a 4V - 20V DC power input.
+* The **5V** terminal should be connected to pin 1 of the controller's molex
+  connector, which is a power source intended to power accessories.  This
+  circuit requires approximately 50mA (or less) from the power input.  While a
+  nominal +5V DC source is expected, there is an internal low-dropout (LDO)
+  regulator on the board that should function with a 4V - 16V DC power input.
+  Do not exceed 16VDC input.  This power supply connection includes a
+  reverse-polarity protection diode.
+
+When power is correctly connected, a green LED `Gen PWR` D20 should illuminate.
 
 
 ### J6 - External 1-wire bus connector
@@ -396,10 +407,10 @@ If pull-ups on the SCL and SDA signals are not desired, then jumper traces s on
 # NO WARRANTY
 
 This project was created for my personal use, but it is available under a
-permissive license to anyone interested.
+permissive [license](LICENSE) to anyone interested.
 
 This software, hardware designs and other information are provided for
-educational and informational purposes only.Connecting any device to a Raspberry
+educational and informational purposes only. Connecting any device to a Raspberry
 Pi or generator carryies risk, and you should understand those risks before
 undertaking that action.  Interconnection of this design to any other devices
 provided by any manufacturer may void any warrantee offered by a manufacturer,
