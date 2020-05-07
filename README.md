@@ -26,6 +26,12 @@ The major changes from his design to this one are:
   peripherals.
 * Add a fuse to protect connections to off-board peripherals.
 
+**IMPORTANT**
+
+Please note that all of the work described here is on the `genmon` branch 
+of the git repository.  Make sure that you `git checkout genmon` if you
+clone the repository to get this modified version.
+
 I'd like to extend my thanks to [Mike](https://github.com/mikelawrence) for
 sharing his work with the community under an [MIT license](LICENSE).  This
 derivitive project is likewise available under the same license.  
@@ -95,6 +101,9 @@ each side, and in excess of 1kV of isolation.
 
 # Status
 
+A schematic for this circuit is available in [PDF format](RPi-pHat-Thermocouple.pdf)
+so you don't need to use KiCAD to casually examine what's going on.
+
 ## Genmon variation
 
 * Rev 3.1 of the PCB fixes pin assignment problems on the Maxim MAX3221
@@ -104,6 +113,10 @@ each side, and in excess of 1kV of isolation.
     link. 
 * Rev 3.0 PCB was the first version of the whole redesign, manufactured by
   JCLPCB.
+
+Please note that all of the work described here is on the `genmon` branch 
+of the git repository.  Make sure that you `git checkout genmon` if you
+clone the repository to get this modified version.
 
 ## Original version
 Older versions described below are Mike Lawrence's original design in the smaller Raspberry Pi Zero sized
@@ -192,6 +205,7 @@ Clone this repository from Github with the following commands.
 ```text
 cd /home/pi
 git clone https://github.com/lmamakos/RPi-pHat-Thermocouple
+git checkout genmon
 ```
 
 ## Setup Interfaces
@@ -414,7 +428,9 @@ educational and informational purposes only. Connecting any device to a Raspberr
 Pi or generator carryies risk, and you should understand those risks before
 undertaking that action.  Interconnection of this design to any other devices
 provided by any manufacturer may void any warrantee offered by a manufacturer,
-or cause damage if performed.
+or cause damage if performed.  You are solely responsible for exercising due
+care and caution when choosing to use these designs and other information
+provided here.
 
 **THIS HARDWARE DESIGN, SOFTWARE AND OTHER MATERIAL IS PROVIDED BY THE COPYRIGHT
 HOLDERS AND CONTRIBUTORS “AS IS” AND ANY EXPRESS OR IMPLIED WARRANTIES,
