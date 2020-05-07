@@ -375,8 +375,7 @@ LEDs).  Typical current through the LED will be 4.5mA; while not terribly bright
 Of course, these signals could also be used to drive, e.g., a MOSFET device, to drive a higher-current load.
 
 One possibility for using this connector to drive one or more LEDs is the
-[gengpio.py]
-(https://github.com/jgyates/genmon/wiki/1----Software-Overview#gengpiopy-optional)
+[gengpio.py](https://github.com/jgyates/genmon/wiki/1----Software-Overview#gengpiopy-optional)
 program, suitably configured.
 
 Note that when using these signals, they can be identified by either the GPIO signal number or the pin number on the Raspberry Pi's expansion connector.  This document
