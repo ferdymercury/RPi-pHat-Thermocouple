@@ -26,6 +26,7 @@ F 5 "Yageo" H 7850 1650 60  0001 C CNN "Manufacturer"
 F 6 "Mouser" H 7850 1650 60  0001 C CNN "Vendor"
 F 7 "603-CC603KRX7R9BB104" H 7850 1650 60  0001 C CNN "Vendor Part Number"
 F 8 "CAP, 0603, .1uF, 10%, X7R, 50V" H 7850 1650 50  0001 C CNN "Description"
+F 9 "C14663" H 7850 1650 50  0001 C CNN "LCSC"
 	1    7850 1650
 	-1   0    0    -1  
 $EndComp
@@ -42,6 +43,7 @@ F 5 "Yageo" H 7200 1200 60  0001 C CNN "Manufacturer"
 F 6 "Mouser" H 7200 1200 60  0001 C CNN "Vendor"
 F 7 "603-CC603KRX7R9BB104" H 7200 1200 60  0001 C CNN "Vendor Part Number"
 F 8 "CAP, 0603, .1uF, 10%, X7R, 50V" H 7200 1200 50  0001 C CNN "Description"
+F 9 "C14663" H 7200 1200 50  0001 C CNN "LCSC"
 	1    7200 1200
 	0    1    1    0   
 $EndComp
@@ -100,6 +102,7 @@ F 5 "Yageo" H 7850 3300 60  0001 C CNN "Manufacturer"
 F 6 "Mouser" H 7850 3300 60  0001 C CNN "Vendor"
 F 7 "603-CC603KRX7R9BB104" H 7850 3300 60  0001 C CNN "Vendor Part Number"
 F 8 "CAP, 0603, .1uF, 10%, X7R, 50V" H 7850 3300 50  0001 C CNN "Description"
+F 9 "C14663" H 7850 3300 50  0001 C CNN "LCSC"
 	1    7850 3300
 	-1   0    0    -1  
 $EndComp
@@ -116,6 +119,7 @@ F 5 "Yageo" H 7200 2850 60  0001 C CNN "Manufacturer"
 F 6 "Mouser" H 7200 2850 60  0001 C CNN "Vendor"
 F 7 "603-CC603KRX7R9BB104" H 7200 2850 60  0001 C CNN "Vendor Part Number"
 F 8 "CAP, 0603, .1uF, 10%, X7R, 50V" H 7200 2850 50  0001 C CNN "Description"
+F 9 "C14663" H 7200 2850 50  0001 C CNN "LCSC"
 	1    7200 2850
 	0    1    1    0   
 $EndComp
@@ -174,6 +178,7 @@ F 5 "Yageo" H 7850 4950 60  0001 C CNN "Manufacturer"
 F 6 "Mouser" H 7850 4950 60  0001 C CNN "Vendor"
 F 7 "603-CC603KRX7R9BB104" H 7850 4950 60  0001 C CNN "Vendor Part Number"
 F 8 "CAP, 0603, .1uF, 10%, X7R, 50V" H 7850 4950 50  0001 C CNN "Description"
+F 9 "C14663" H 7850 4950 50  0001 C CNN "LCSC"
 	1    7850 4950
 	-1   0    0    -1  
 $EndComp
@@ -190,6 +195,7 @@ F 5 "Yageo" H 7200 4500 60  0001 C CNN "Manufacturer"
 F 6 "Mouser" H 7200 4500 60  0001 C CNN "Vendor"
 F 7 "603-CC603KRX7R9BB104" H 7200 4500 60  0001 C CNN "Vendor Part Number"
 F 8 "CAP, 0603, .1uF, 10%, X7R, 50V" H 7200 4500 50  0001 C CNN "Description"
+F 9 "C14663" H 7200 4500 50  0001 C CNN "LCSC"
 	1    7200 4500
 	0    1    1    0   
 $EndComp
@@ -281,6 +287,7 @@ F 5 "Yageo" H 4250 1450 60  0001 C CNN "Manufacturer"
 F 6 "Mouser" H 4250 1450 60  0001 C CNN "Vendor"
 F 7 "603-CC603KRX7R9BB104" H 4250 1450 60  0001 C CNN "Vendor Part Number"
 F 8 "CAP, 0603, .1uF, 10%, X7R, 50V" H 4250 1450 50  0001 C CNN "Description"
+F 9 "C14663" H 4250 1450 50  0001 C CNN "LCSC"
 	1    4250 1450
 	-1   0    0    -1  
 $EndComp
@@ -297,6 +304,7 @@ F 5 "Yageo" H 2550 1300 60  0001 C CNN "Manufacturer"
 F 6 "Mouser" H 2550 1300 60  0001 C CNN "Vendor"
 F 7 "603-CC805KKX7R7BB225" H 2550 1300 60  0001 C CNN "Vendor Part Number"
 F 8 "CAP, 0805, 2.2uF, 10%, X7R, 16V" H 2550 1300 50  0001 C CNN "Description"
+F 9 " C49217" H 2550 1300 50  0001 C CNN "LCSC"
 	1    2550 1300
 	-1   0    0    1   
 $EndComp
@@ -324,6 +332,7 @@ F 5 "Yageo" H 3350 1300 60  0001 C CNN "Manufacturer"
 F 6 "Mouser" H 3350 1300 60  0001 C CNN "Vendor"
 F 7 "603-CC805KKX7R7BB225" H 3350 1300 60  0001 C CNN "Vendor Part Number"
 F 8 "CAP, 0805, 2.2uF, 10%, X7R, 16V" H 3350 1300 50  0001 C CNN "Description"
+F 9 " C49217" H 3350 1300 50  0001 C CNN "LCSC"
 	1    3350 1300
 	1    0    0    1   
 $EndComp
@@ -351,6 +360,7 @@ F 5 "Murata Electronics" H 7200 1000 60  0001 C CNN "Manufacturer"
 F 6 "Mouser" H 7200 1000 60  0001 C CNN "Vendor"
 F 7 "603-CC603KRX7R9BB103" H 7200 1000 60  0001 C CNN "Vendor Part Number"
 F 8 "CAP, 0603, .01uF, 10%, X7R, 50V" H 7200 1000 50  0001 C CNN "Description"
+F 9 "C57112" H 7200 1000 50  0001 C CNN "LCSC"
 	1    7200 1000
 	0    -1   1    0   
 $EndComp
@@ -378,6 +388,7 @@ F 5 "Murata Electronics" H 7200 2650 60  0001 C CNN "Manufacturer"
 F 6 "Mouser" H 7200 2650 60  0001 C CNN "Vendor"
 F 7 "603-CC603KRX7R9BB103" H 7200 2650 60  0001 C CNN "Vendor Part Number"
 F 8 "CAP, 0603, .01uF, 10%, X7R, 50V" H 7200 2650 50  0001 C CNN "Description"
+F 9 "C57112" H 7200 2650 50  0001 C CNN "LCSC"
 	1    7200 2650
 	0    -1   1    0   
 $EndComp
@@ -501,6 +512,7 @@ F 5 "Murata Electronics" H 7200 4300 60  0001 C CNN "Manufacturer"
 F 6 "Mouser" H 7200 4300 60  0001 C CNN "Vendor"
 F 7 "603-CC603KRX7R9BB103" H 7200 4300 60  0001 C CNN "Vendor Part Number"
 F 8 "CAP, 0603, .01uF, 10%, X7R, 50V" H 7200 4300 50  0001 C CNN "Description"
+F 9 "C57112" H 7200 4300 50  0001 C CNN "LCSC"
 	1    7200 4300
 	0    -1   1    0   
 $EndComp
@@ -557,6 +569,7 @@ F 5 "Microchip" H 2950 1100 60  0001 C CNN "Manufacturer"
 F 6 "Mouser" H 2950 1100 60  0001 C CNN "Vendor"
 F 7 "579-MCP1754ST3302EMB" H 2950 1100 60  0001 C CNN "Vendor Part Number"
 F 8 "IC, SOT89-3, LDO VREG, 16V, .15A" H 2950 1100 50  0001 C CNN "Description"
+F 9 "C6186" H 2950 1100 50  0001 C CNN "LCSC"
 	1    2950 1100
 	1    0    0    -1  
 $EndComp
@@ -671,6 +684,7 @@ F 5 "TDK" V 8900 1350 50  0001 C CNN "Manufacturer"
 F 6 "Mouser" V 8900 1350 50  0001 C CNN "Vendor"
 F 7 "810-MMZ1608B102CTD25 " V 8900 1350 50  0001 C CNN "Vendor Part Number"
 F 8 "BEAD, 0603, .3A, 1k@100MHz" H 8900 1350 50  0001 C CNN "Description"
+F 9 "C73100" H 8900 1350 50  0001 C CNN "LCSC"
 	1    8900 1350
 	0    -1   1    0   
 $EndComp
@@ -717,6 +731,7 @@ F 5 "TDK" V 8900 1950 50  0001 C CNN "Manufacturer"
 F 6 "Mouser" V 8900 1950 50  0001 C CNN "Vendor"
 F 7 "810-MMZ1608B102CTD25 " V 8900 1950 50  0001 C CNN "Vendor Part Number"
 F 8 "BEAD, 0603, .3A, 1k@100MHz" H 8900 1950 50  0001 C CNN "Description"
+F 9 "C73100" H 8900 1950 50  0001 C CNN "LCSC"
 	1    8900 1950
 	0    -1   1    0   
 $EndComp
@@ -733,6 +748,7 @@ F 5 "TDK" V 8900 3000 50  0001 C CNN "Manufacturer"
 F 6 "Mouser" V 8900 3000 50  0001 C CNN "Vendor"
 F 7 "810-MMZ1608B102CTD25 " V 8900 3000 50  0001 C CNN "Vendor Part Number"
 F 8 "BEAD, 0603, .3A, 1k@100MHz" H 8900 3000 50  0001 C CNN "Description"
+F 9 "C73100" H 8900 3000 50  0001 C CNN "LCSC"
 	1    8900 3000
 	0    -1   1    0   
 $EndComp
@@ -749,6 +765,7 @@ F 5 "TDK" V 8900 3600 50  0001 C CNN "Manufacturer"
 F 6 "Mouser" V 8900 3600 50  0001 C CNN "Vendor"
 F 7 "810-MMZ1608B102CTD25 " V 8900 3600 50  0001 C CNN "Vendor Part Number"
 F 8 "BEAD, 0603, .3A, 1k@100MHz" H 8900 3600 50  0001 C CNN "Description"
+F 9 "C73100" H 8900 3600 50  0001 C CNN "LCSC"
 	1    8900 3600
 	0    -1   1    0   
 $EndComp
@@ -785,6 +802,7 @@ F 5 "TDK" V 8900 4650 50  0001 C CNN "Manufacturer"
 F 6 "Mouser" V 8900 4650 50  0001 C CNN "Vendor"
 F 7 "810-MMZ1608B102CTD25 " V 8900 4650 50  0001 C CNN "Vendor Part Number"
 F 8 "BEAD, 0603, .3A, 1k@100MHz" H 8900 4650 50  0001 C CNN "Description"
+F 9 "C73100" H 8900 4650 50  0001 C CNN "LCSC"
 	1    8900 4650
 	0    -1   1    0   
 $EndComp
@@ -801,6 +819,7 @@ F 5 "TDK" V 8900 5250 50  0001 C CNN "Manufacturer"
 F 6 "Mouser" V 8900 5250 50  0001 C CNN "Vendor"
 F 7 "810-MMZ1608B102CTD25 " V 8900 5250 50  0001 C CNN "Vendor Part Number"
 F 8 "BEAD, 0603, .3A, 1k@100MHz" H 8900 5250 50  0001 C CNN "Description"
+F 9 "C73100" H 8900 5250 50  0001 C CNN "LCSC"
 	1    8900 5250
 	0    -1   1    0   
 $EndComp
@@ -817,6 +836,7 @@ F 5 "NUP2105LT1G" V 8350 1650 50  0001 C CNN "Part Number"
 F 6 "Mouser" V 8350 1650 50  0001 C CNN "Vendor"
 F 7 "863-NUP2105LT1G" V 8350 1650 50  0001 C CNN "Vendor Part Number"
 F 8 "TVS, SOT23, ESD TVS Protection" H 8350 1650 50  0001 C CNN "Description"
+F 9 "C252430" H 8350 1650 50  0001 C CNN "LCSC"
 	1    8350 1650
 	0    1    1    0   
 $EndComp
@@ -898,6 +918,7 @@ F 5 "NUP2105LT1G" V 8350 3300 50  0001 C CNN "Part Number"
 F 6 "Mouser" V 8350 3300 50  0001 C CNN "Vendor"
 F 7 "863-NUP2105LT1G" V 8350 3300 50  0001 C CNN "Vendor Part Number"
 F 8 "TVS, SOT23, ESD TVS Protection" H 8350 3300 50  0001 C CNN "Description"
+F 9 "C252430" H 8350 3300 50  0001 C CNN "LCSC"
 	1    8350 3300
 	0    1    1    0   
 $EndComp
@@ -939,6 +960,7 @@ F 5 "NUP2105LT1G" V 8350 4950 50  0001 C CNN "Part Number"
 F 6 "Mouser" V 8350 4950 50  0001 C CNN "Vendor"
 F 7 "863-NUP2105LT1G" V 8350 4950 50  0001 C CNN "Vendor Part Number"
 F 8 "TVS, SOT23, ESD TVS Protection" H 8350 4950 50  0001 C CNN "Description"
+F 9 "C252430" H 8350 4950 50  0001 C CNN "LCSC"
 	1    8350 4950
 	0    1    1    0   
 $EndComp
@@ -1180,6 +1202,7 @@ F 5 "Murata Electronics" H 3700 6650 60  0001 C CNN "Manufacturer"
 F 6 "Mouser" H 3700 6650 60  0001 C CNN "Vendor"
 F 7 "603-CC603KRX7R9BB103" H 3700 6650 60  0001 C CNN "Vendor Part Number"
 F 8 "CAP, 0603, .01uF, 10%, X7R, 50V" H 3700 6650 50  0001 C CNN "Description"
+F 9 "C57112" H 3700 6650 50  0001 C CNN "LCSC"
 	1    3700 6650
 	-1   0    0    -1  
 $EndComp
@@ -1226,6 +1249,7 @@ F 5 "Yageo" H 1550 6400 60  0001 C CNN "Manufacturer"
 F 6 "Mouser" H 1550 6400 60  0001 C CNN "Vendor"
 F 7 "603-CC603KRX7R9BB104" H 1550 6400 60  0001 C CNN "Vendor Part Number"
 F 8 "CAP, 0603, .1uF, 10%, X7R, 50V" H 1550 6400 50  0001 C CNN "Description"
+F 9 "C14663" H 1550 6400 50  0001 C CNN "LCSC"
 	1    1550 6400
 	-1   0    0    -1  
 $EndComp
@@ -1250,6 +1274,7 @@ F 5 "Yageo" H 1550 6850 60  0001 C CNN "Manufacturer"
 F 6 "Mouser" H 1550 6850 60  0001 C CNN "Vendor"
 F 7 "603-CC603KRX7R9BB104" H 1550 6850 60  0001 C CNN "Vendor Part Number"
 F 8 "CAP, 0603, .1uF, 10%, X7R, 50V" H 1550 6850 50  0001 C CNN "Description"
+F 9 "C14663" H 1550 6850 50  0001 C CNN "LCSC"
 	1    1550 6850
 	-1   0    0    -1  
 $EndComp
@@ -1266,6 +1291,7 @@ F 5 "Yageo" H 3000 6600 60  0001 C CNN "Manufacturer"
 F 6 "Mouser" H 3000 6600 60  0001 C CNN "Vendor"
 F 7 "603-CC603KRX7R9BB104" H 3000 6600 60  0001 C CNN "Vendor Part Number"
 F 8 "CAP, 0603, .1uF, 10%, X7R, 50V" H 3000 6600 50  0001 C CNN "Description"
+F 9 "C14663" H 3000 6600 50  0001 C CNN "LCSC"
 	1    3000 6600
 	0    -1   1    0   
 $EndComp
@@ -1284,6 +1310,7 @@ F 5 "Yageo" H 3000 7100 60  0001 C CNN "Manufacturer"
 F 6 "Mouser" H 3000 7100 60  0001 C CNN "Vendor"
 F 7 "603-CC603KRX7R9BB104" H 3000 7100 60  0001 C CNN "Vendor Part Number"
 F 8 "CAP, 0603, .1uF, 10%, X7R, 50V" H 3000 7100 50  0001 C CNN "Description"
+F 9 "C14663" H 3000 7100 50  0001 C CNN "LCSC"
 	1    3000 7100
 	0    -1   1    0   
 $EndComp
@@ -1325,6 +1352,7 @@ F 4 " 1206L010/60WR " H 8500 5800 50  0001 C CNN "Part Number"
 F 5 "576-1206L010/60WR" H 8500 5800 50  0001 C CNN "Vendor Part Number"
 F 6 "FUSE, 1206,  100mA" H 8500 5800 50  0001 C CNN "Description"
 F 7 "Mouser" H 8500 5800 50  0001 C CNN "Vendor"
+F 8 "C261947" H 8500 5800 50  0001 C CNN "LCSC"
 	1    8500 5800
 	0    1    1    0   
 $EndComp
@@ -1359,6 +1387,7 @@ F 5 "Yageo" H 1850 5450 60  0001 C CNN "Manufacturer"
 F 6 "Mouser" H 1850 5450 60  0001 C CNN "Vendor"
 F 7 "603-CC805KKX7R7BB225" H 1850 5450 60  0001 C CNN "Vendor Part Number"
 F 8 "CAP, 0805, 2.2uF, 10%, X7R, 16V" H 1850 5450 50  0001 C CNN "Description"
+F 9 " C49217" H 1850 5450 50  0001 C CNN "LCSC"
 	1    1850 5450
 	-1   0    0    1   
 $EndComp
@@ -1375,6 +1404,7 @@ F 5 "Yageo" H 2650 5450 60  0001 C CNN "Manufacturer"
 F 6 "Mouser" H 2650 5450 60  0001 C CNN "Vendor"
 F 7 "603-CC805KKX7R7BB225" H 2650 5450 60  0001 C CNN "Vendor Part Number"
 F 8 "CAP, 0805, 2.2uF, 10%, X7R, 16V" H 2650 5450 50  0001 C CNN "Description"
+F 9 " C49217" H 2650 5450 50  0001 C CNN "LCSC"
 	1    2650 5450
 	1    0    0    1   
 $EndComp
@@ -1398,6 +1428,7 @@ F 5 "Microchip" H 2250 5250 60  0001 C CNN "Manufacturer"
 F 6 "Mouser" H 2250 5250 60  0001 C CNN "Vendor"
 F 7 "579-MCP1754ST3302EMB" H 2250 5250 60  0001 C CNN "Vendor Part Number"
 F 8 "IC, SOT89-3, LDO VREG, 16V, .15A" H 2250 5250 50  0001 C CNN "Description"
+F 9 "C6186" H 2250 5250 50  0001 C CNN "LCSC"
 	1    2250 5250
 	1    0    0    -1  
 $EndComp
@@ -1461,6 +1492,7 @@ F 5 "Analog Device" H 4550 6650 50  0001 C CNN "Manufacturer"
 F 6 "ADUM1201AR" H 4550 6650 50  0001 C CNN "Part Number"
 F 7 "Mouser" H 4550 6650 50  0001 C CNN "Vendor"
 F 8 "584-ADUM1201AR" H 4550 6650 50  0001 C CNN "Vendor Part Number"
+F 9 "C9669" H 4550 6650 50  0001 C CNN "LCSC"
 	1    4550 6650
 	1    0    0    -1  
 $EndComp
@@ -1670,6 +1702,7 @@ F 7 "963-TMK212BBJ226MGTT" H 5250 2650 60  0001 C CNN "Vendor Part Number"
 F 8 "25V" H 5350 2550 50  0000 L CNN "Voltage"
 F 9 "20%" H 5250 2650 60  0001 C CNN "Tolerance"
 F 10 "CAP, 0805, 22uf, 20%, X5R, 25V" H 5250 2650 50  0001 C CNN "Description"
+F 11 "C45783" H 5250 2650 50  0001 C CNN "LCSC"
 	1    5250 2650
 	0    -1   -1   0   
 $EndComp
@@ -1738,6 +1771,7 @@ F 6 "Mouser" H 3800 1850 60  0001 C CNN "Vendor"
 F 7 "603-AC0603FR-074K7L" H 3800 1850 60  0001 C CNN "Vendor Part Number"
 F 8 "1%" H 3850 1800 50  0000 L CNN "Tolerance"
 F 9 "RES, 0603, 4.7k, 1%, T100" H 3800 1850 50  0001 C CNN "Description"
+F 10 "C23162" H 3800 1850 50  0001 C CNN "LCSC"
 	1    3800 1850
 	1    0    0    1   
 $EndComp
@@ -1935,6 +1969,7 @@ F 5 "Murata Electronics" H 5500 6650 60  0001 C CNN "Manufacturer"
 F 6 "Mouser" H 5500 6650 60  0001 C CNN "Vendor"
 F 7 "603-CC603KRX7R9BB103" H 5500 6650 60  0001 C CNN "Vendor Part Number"
 F 8 "CAP, 0603, .01uF, 10%, X7R, 50V" H 5500 6650 50  0001 C CNN "Description"
+F 9 "C57112" H 5500 6650 50  0001 C CNN "LCSC"
 	1    5500 6650
 	-1   0    0    -1  
 $EndComp
@@ -1962,6 +1997,7 @@ F 5 "TI" H 2250 6900 50  0001 C CNN "Manufacturer"
 F 6 "MAX3221CDBR" H 2250 6900 50  0001 C CNN "Part Number"
 F 7 "Mouser" H 2250 6900 50  0001 C CNN "Vendor"
 F 8 "595-MAX3221CDBR" H 2250 6900 50  0001 C CNN "Vendor Part Number"
+F 9 "C105243" H 2250 6900 50  0001 C CNN "LCSC"
 	1    2250 6900
 	1    0    0    -1  
 $EndComp
@@ -1987,6 +2023,7 @@ F 6 "RC0603FR-07330RL" H 1500 2850 50  0001 C CNN "Part Number"
 F 7 "1%" H 1500 2850 50  0001 C CNN "Tolerance"
 F 8 "Mouser" H 1500 2850 50  0001 C CNN "Vendor"
 F 9 "603-RC0603FR-07330RL" H 1500 2850 50  0001 C CNN "Vendor Part Number"
+F 10 "C23138" H 1500 2850 50  0001 C CNN "LCSC"
 	1    1500 2850
 	0    1    1    0   
 $EndComp
@@ -2004,6 +2041,7 @@ F 6 "RC0603FR-07330RL" H 1750 3100 50  0001 C CNN "Part Number"
 F 7 "1%" H 1750 3100 50  0001 C CNN "Tolerance"
 F 8 "Mouser" H 1750 3100 50  0001 C CNN "Vendor"
 F 9 "603-RC0603FR-07330RL" H 1750 3100 50  0001 C CNN "Vendor Part Number"
+F 10 "C23138" H 1750 3100 50  0001 C CNN "LCSC"
 	1    1750 3100
 	0    1    1    0   
 $EndComp
@@ -2021,6 +2059,7 @@ F 6 "RC0603FR-07330RL" H 1500 3350 50  0001 C CNN "Part Number"
 F 7 "1%" H 1500 3350 50  0001 C CNN "Tolerance"
 F 8 "Mouser" H 1500 3350 50  0001 C CNN "Vendor"
 F 9 "603-RC0603FR-07330RL" H 1500 3350 50  0001 C CNN "Vendor Part Number"
+F 10 "C23138" H 1500 3350 50  0001 C CNN "LCSC"
 	1    1500 3350
 	0    1    1    0   
 $EndComp
@@ -2038,6 +2077,7 @@ F 6 "RC0603FR-07330RL" H 1750 3600 50  0001 C CNN "Part Number"
 F 7 "1%" H 1750 3600 50  0001 C CNN "Tolerance"
 F 8 "Mouser" H 1750 3600 50  0001 C CNN "Vendor"
 F 9 "603-RC0603FR-07330RL" H 1750 3600 50  0001 C CNN "Vendor Part Number"
+F 10 "C23138" H 1750 3600 50  0001 C CNN "LCSC"
 	1    1750 3600
 	0    1    1    0   
 $EndComp
@@ -2055,6 +2095,7 @@ F 6 "RC0603FR-07330RL" H 1500 3800 50  0001 C CNN "Part Number"
 F 7 "1%" H 1500 3800 50  0001 C CNN "Tolerance"
 F 8 "Mouser" H 1500 3800 50  0001 C CNN "Vendor"
 F 9 "603-RC0603FR-07330RL" H 1500 3800 50  0001 C CNN "Vendor Part Number"
+F 10 "C23138" H 1500 3800 50  0001 C CNN "LCSC"
 	1    1500 3800
 	0    1    1    0   
 $EndComp
@@ -2072,6 +2113,7 @@ F 6 "RC0603FR-07330RL" H 1750 4000 50  0001 C CNN "Part Number"
 F 7 "1%" H 1750 4000 50  0001 C CNN "Tolerance"
 F 8 "Mouser" H 1750 4000 50  0001 C CNN "Vendor"
 F 9 "603-RC0603FR-07330RL" H 1750 4000 50  0001 C CNN "Vendor Part Number"
+F 10 "C23138" H 1750 4000 50  0001 C CNN "LCSC"
 	1    1750 4000
 	0    1    1    0   
 $EndComp
@@ -2133,6 +2175,7 @@ F 6 "Mouser" H 1700 2200 60  0001 C CNN "Vendor"
 F 7 "603-AC0603FR-074K7L" H 1700 2200 60  0001 C CNN "Vendor Part Number"
 F 8 "1%" H 1750 2250 50  0000 L CNN "Tolerance"
 F 9 "RES, 0603, 4.7k, 1%, T100" H 1700 2200 50  0001 C CNN "Description"
+F 10 "C23162" H 1700 2200 50  0001 C CNN "LCSC"
 	1    1700 2200
 	1    0    0    1   
 $EndComp
@@ -2150,6 +2193,7 @@ F 6 "Mouser" H 2100 2200 60  0001 C CNN "Vendor"
 F 7 "603-AC0603FR-074K7L" H 2100 2200 60  0001 C CNN "Vendor Part Number"
 F 8 "1%" H 2150 2250 50  0000 L CNN "Tolerance"
 F 9 "RES, 0603, 4.7k, 1%, T100" H 2100 2200 50  0001 C CNN "Description"
+F 10 "C23162" H 2100 2200 50  0001 C CNN "LCSC"
 	1    2100 2200
 	1    0    0    1   
 $EndComp
@@ -2284,6 +2328,7 @@ F 5 "On Semi" H 1350 5250 50  0001 C CNN "Manufacturer"
 F 6 "NSR20F30NXT5G" H 1350 5250 50  0001 C CNN "Part Number"
 F 7 "Mouser" H 1350 5250 50  0001 C CNN "Vendor"
 F 8 "863-NSR20F30NXT5G" H 1350 5250 50  0001 C CNN "Vendor Part Number"
+F 9 "C8598" H 1350 5250 50  0001 C CNN "LCSC"
 	1    1350 5250
 	-1   0    0    1   
 $EndComp
@@ -2304,6 +2349,7 @@ F 5 "Broadcom" H 3900 5500 50  0001 C CNN "Manufacturer"
 F 6 "ASMT-RF45-AN002" H 3900 5500 50  0001 C CNN "Part Number"
 F 7 "Mouser" H 3900 5500 50  0001 C CNN "Vendor"
 F 8 "630-ASMT-RF45-AN002" H 3900 5500 50  0001 C CNN "Vendor Part Number"
+F 9 "C72043" H 3900 5500 50  0001 C CNN "LCSC"
 	1    3900 5500
 	0    -1   -1   0   
 $EndComp
@@ -2323,6 +2369,7 @@ F 6 "RC0603FR-07120RL" H 3650 5250 50  0001 C CNN "Part Number"
 F 7 "1%" H 3650 5250 50  0001 C CNN "Tolerance"
 F 8 "Mouser" H 3650 5250 50  0001 C CNN "Vendor"
 F 9 "603-RC0603FR-07120RL" H 3650 5250 50  0001 C CNN "Vendor Part Number"
+F 10 "C22787" H 3650 5250 50  0001 C CNN "LCSC"
 	1    3650 5250
 	0    1    1    0   
 $EndComp
@@ -2360,6 +2407,7 @@ F 6 "RC0603FR-07120RL" H 5850 6300 50  0001 C CNN "Part Number"
 F 7 "1%" H 5850 6300 50  0001 C CNN "Tolerance"
 F 8 "Mouser" H 5850 6300 50  0001 C CNN "Vendor"
 F 9 "603-RC0603FR-07120RL" H 5850 6300 50  0001 C CNN "Vendor Part Number"
+F 10 "C22787" H 5850 6300 50  0001 C CNN "LCSC"
 	1    5850 6300
 	0    1    1    0   
 $EndComp
@@ -2409,6 +2457,7 @@ F 5 "Broadcom" H 6100 6600 50  0001 C CNN "Manufacturer"
 F 6 "ASMT-RF45-AN002" H 6100 6600 50  0001 C CNN "Part Number"
 F 7 "Mouser" H 6100 6600 50  0001 C CNN "Vendor"
 F 8 "630-ASMT-RF45-AN002" H 6100 6600 50  0001 C CNN "Vendor Part Number"
+F 9 "C72043" H 6100 6600 50  0001 C CNN "LCSC"
 	1    6100 6600
 	0    -1   -1   0   
 $EndComp
