@@ -144,7 +144,9 @@ form factor.
 
 * This PCB design uses some libraries available here [Mike's KiCad Libraries](https://github.com/mikelawrence/KiCad-Libraries).
 * This PCB was designed with [KiCad 5.1.5](http://kicad-pcb.org).
-* The MAX31850K parts have an exposed pad on the bottom which requires either a reflow oven or hot air to solder properly.
+* The MAX31850K parts have an exposed pad on the bottom which requires either a
+  reflow oven or hot air to solder properly.  Be careful to not apply too much
+  solder paste to this pad.
 
 # Design
 
@@ -266,6 +268,33 @@ temperatures, as high as 700 °C.  As a practical matter, the maximum temperatur
 is limited by the insulation and jacket on the cabling connecting to the
 thermocouple junction.  Typically, thermocouple products with cables rated to
 400 °C are easily available and inexpensive.
+
+**VERY IMPORTANT** - the MAX 31855K thermocouple interface devices does not
+support *grounded thermocouples* - where the junction of the thermocouple is
+electrically connected to the power supply ground.  In particular, the sensor
+device does a diagnostic test checking for an "open" connection at the
+thermocouple terminals, as well as a short to ground or the *V<sub>dd</sub>*
+power supply on the board.
+
+It's common to see either exposed junction thermocouples, or where the actual
+thermocouple junction is within a metal tube or other mechanical arrangement.
+The junction is deliberately tied to the case (which presumably is in contact
+with the thing you're trying to measure) for better thermoconducivity, making it
+more responsive to temperature changes.  Additionally some thermocouple probe
+arrangements have a woven metalic armor shield on the cable, which is also
+electrically tied to the thermocouple junction. If these armored cables come in
+contact with each other, this will also cause a fault.
+
+It is recommended that you choose a Type-K thermocouple with a high (enough)
+temperature rated cable, and either have the thermocouple junction be in free
+space, or insulated from the chassis of the generator.
+
+One possibility if you use the inexpensive generic thermocouple probes is to
+form a small bead of high temperature expoxy around the junction, or affix the
+the junction with non-conductive expoxy to the surface you're trying to perform
+temperature measurements on.
+
+### DS18B20 or DS18S20 1-wire bus sensors
 
 Why not the usual Maxim DS18B20 one-wire bus temperature sensors?  These
 semiconductor devices are packaged in plastic material for their packages, and
