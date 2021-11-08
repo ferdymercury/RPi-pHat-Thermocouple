@@ -143,7 +143,7 @@ form factor.
 # Kicad Notes
 
 * This PCB design uses some libraries available here [Mike's KiCad Libraries](https://github.com/mikelawrence/KiCad-Libraries).
-* This PCB was designed with [KiCad 5.1.5](http://kicad-pcb.org).
+* This PCB was designed with [KiCad 5.1.5](http://kicad.org).
 * The MAX31850K parts have an exposed pad on the bottom which requires either a
   reflow oven or hot air to solder properly.  Be careful to not apply too much
   solder paste to this pad.
